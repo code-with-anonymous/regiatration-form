@@ -31,13 +31,13 @@ function toastifyError (text){
  }
 
  let clear = () => {
-    document.getElementById("username").value = ""; // Clear username input field
-    document.getElementById("email").value = ""; // Clear email input field
-    document.getElementById("password").value = ""; // Clear password input field
+    document.getElementById("username").value = ""; 
+    document.getElementById("email").value = ""; 
+    document.getElementById("password").value = "";
 };
 let clear1 = () => {
-    document.getElementById("username").value = ""; // Clear username input field
-    document.getElementById("password").value = ""; // Clear password input field
+    document.getElementById("username").value = ""; 
+    document.getElementById("password").value = ""; 
 };
 
 
@@ -56,13 +56,13 @@ let addData = () => {
     toastifySuccess("User is successfully registered");
    
     
-    // Retrieve existing data from local storage or initialize an empty array
+   
     let storedData = JSON.parse(localStorage.getItem("userData")) || [];
 
     // Add new data to the array
     storedData.push(data);
 
-    // Store the updated array back to local storage
+    
     localStorage.setItem("userData", JSON.stringify(storedData));
     
     clear();
@@ -94,7 +94,7 @@ let validate = () => {
 
 
  document.addEventListener("DOMContentLoaded", function() {
-    // Your JavaScript code here
+    
 });
 
  
